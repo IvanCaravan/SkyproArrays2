@@ -28,9 +28,9 @@ public class Main {
     }
     public static void task2() {
         System.out.println("Задача 2");
-        int[ ] arr = generateRandomArray();
-        int maxInt = 1;
-        int minInt = 200000;
+        int[] arr = generateRandomArray();
+        int maxInt = arr[0];
+        int minInt = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (maxInt < arr[i]) {
                 maxInt = arr[i];
@@ -50,8 +50,8 @@ public class Main {
         for (int i:arr) {
             sum += i;
         }
-        float medNumber = sum / 30;
-        System.out.println("Средняя сумма трат за месяц составила " + medNumber + " рублей");
+        float avgNumber = sum / 30;
+        System.out.println("Средняя сумма трат за месяц составила " + avgNumber + " рублей");
     }
     public static void task4() {
         System.out.println("Задача 4");
